@@ -11,7 +11,7 @@ var sort = (function (){
 
     middle = Math.floor(array.length / 2);
     leftPart = array.slice(0, middle);
-    rightPart = array.slice(middle, array.length + 1);
+    rightPart = array.slice(middle);
 
     return merge(Sort(leftPart), Sort(rightPart));
   };
